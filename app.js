@@ -47,7 +47,6 @@ module.exports = function (deps) {
         }
         
 
-      // fs.appendFile(deps.messagesPath, '\n' + JSON.stringify(msg), err => err ? console.log(err) : null)
     })
 
     socket.on('disconnect', () => {
