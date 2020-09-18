@@ -1,0 +1,144 @@
+ul {
+    list-style-type: none;
+}
+
+body {
+    background: linear-gradient(black 10%, gray);
+    height: 100vh;
+    text-align: center;
+  }
+
+.logo {
+    text-align: center;
+    /* position: relative;
+    left: 33vw; */
+}
+
+#menu-outer {
+    /* text-align: center; */
+    /* position: relative;
+    right:2vw; */
+
+}
+
+.table {
+    display: table;
+    margin: 0 auto;
+    position: relative;
+    right: 2vw;
+    
+
+}
+
+
+ul#horizontal-list li{
+    display: inline;
+}
+
+li{
+    margin: 5px;
+    margin-top: 0px;
+}
+
+button {
+    margin: 5px;
+    border-radius: 6px;
+    background-color: rgb(161, 160, 160);
+    font-weight: bold;
+}
+  
+button:hover {
+    background-color: rgb(117, 117, 117);
+    /* color: whitesmoke; */
+    /* color: red; */
+    border-style: solid;
+    border-color: red;
+}
+
+button:focus {
+    outline: transparent;
+}
+
+#message-btn {
+    height: 30px;
+}
+
+#chat-container {
+    text-align: justify;
+    margin-top: 3px; 
+    margin-left: 20%;
+    margin-right: 25%;
+    margin-bottom: 5px;
+    padding: 5px; 
+    box-sizing: border-box; 
+  
+    background: rgba(39, 39, 39, 0.2); 
+    /* padding: 3px;  */
+    /* position: fixed;  */
+    bottom: 0; 
+    width: 60%;
+    border-radius: 5%;
+    overflow-y: auto;
+    height: 450px;
+    border-style: solid;
+    border-color: rgba(124, 123, 123, 0.3);
+    /* border-color: red; */
+    /* border-color: rgb(20, 20, 20); */
+    border-width: 2px;
+  }
+
+#chat-room{
+    margin-top: 3px;
+}
+
+h5{
+    color: whitesmoke;
+    font-size: 20px;
+    margin: 5px;
+}
+
+#message-text{
+    width: 55%;
+    height: 20px;
+}
+
+input {
+    margin: 2px;
+}
+
+input:focus {
+    outline: transparent ;
+}
+
+.nick {
+    color: rgb(139, 137, 137);
+    font-size: 20px;
+}
+
+.text {
+    color: whitesmoke;
+    font-style: italic;
+    font-size: 20px;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+    .logo {
+      animation: logo-spin 10 500ms linear;
+    }
+  }
+  
+  @keyframes logo-spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(5deg);
+    }
+    75% {
+      transform: rotate(-2deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
