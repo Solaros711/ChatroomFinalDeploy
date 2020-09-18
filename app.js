@@ -21,7 +21,10 @@ module.exports = function (deps) {
   app.use(express.json())
   app.use('/', AuthController)
   app.use('/', GetController)
-
+  if(process.env.MODE_ENV === undefined){
+    app.use(express.static('client-react/build'))
+    console.log("test")
+  }
   const http = require('http').createServer(app)
   const io = require('socket.io')(http)
 
