@@ -17,7 +17,7 @@ import './App.css'
 import logo from './chat_title_2.png'
 const jwt = require('jsonwebtoken')
 
-const socket = io('http://super-chat-app-9999.herokuapp.com/')
+const socket = io('/')
 
 class App extends React.Component {
   constructor (props) {
