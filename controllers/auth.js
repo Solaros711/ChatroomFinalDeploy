@@ -27,7 +27,7 @@ router.post('/login', (req, res) => {
 
     const token = jwt.sign({
       _id: user._id
-    }, 'CHANGEME!')
+    }, process.env.SECRET_KEY)
 
     res.send({
       username: req.body.username,
