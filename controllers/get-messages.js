@@ -10,8 +10,8 @@ router.get('/messages', (req, res) => {
   const authorization = req.header('Authorization') || ''
   const [type, token] = authorization.split(' ')
   console.log("inside get-messages.js")
-  if (type === 'Bearer' && jwt.verify(token, 'CHANGEME!')) {
-    const payload = jwt.decode(token, 'CHANGEME!')
+  if (type === 'Bearer' && jwt.verify(token, process.env.SECRET_KEY)) {
+    const payload = jwt.decode(token, process.env.SECRET_KEY)
     User.findOne({ _id: payload._id }, (err, user) => {
       if (err) return res.status(500).send(err)
 
