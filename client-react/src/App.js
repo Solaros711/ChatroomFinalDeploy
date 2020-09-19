@@ -90,6 +90,7 @@ class App extends React.Component {
 
   sendMessage (text, messageRoom) {
     const message = { text: text, nick: this.state.nick, room: messageRoom, userId: this.state.userId }
+    console.log(message)
     socket.emit('chat message', message)
   }
 

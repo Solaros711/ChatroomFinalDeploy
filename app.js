@@ -32,6 +32,7 @@ module.exports = function (deps) {
     console.log('a user connected')
 
     socket.on('chat message', (msg) => {
+      console.log(msg)
         try {
           if (jwt.verify(msg.userId, secret)) {
             const user = jwt.decode(msg.userId, secret)
