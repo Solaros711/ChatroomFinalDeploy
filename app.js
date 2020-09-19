@@ -5,7 +5,7 @@ const Message = require('./models/Messages')
 const { userInfo } = require('os')
 const jwt = require('jsonwebtoken')
 const User = require('./models/User')
-const secret = require('./secrets')
+const secret = process.env.SECRET_KEY
 
 
 // const ProtectedController = require('./controllers/protected')
